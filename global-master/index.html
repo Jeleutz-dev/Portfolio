@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jeleutz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+
+  <link rel="stylesheet" href="assets/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+  <link rel="stylesheet" href="assets/css/aos.css">
+
+  <link rel="stylesheet" href="assets/css/ionicons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link rel="stylesheet" href="assets/css/icomoon.css">
+
+</head>
+
+<style>
+.col-md-4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.33333%;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
+
+.text-center {
+  text-align: center !important; }
+
+.d-flex {
+display: -webkit-box !important;
+display: -ms-flexbox !important;
+display: flex !important; }
+
+.ftco-animate {
+  opacity: 0;
+  visibility: hidden; }
+
+.services-1 {
+  margin-bottom: 40px;
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  -webkit-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17); }
+  .services-1 .icon {
+    display: block;
+    margin-bottom: 30px; }
+    .services-1 .icon i {
+      font-size: 60px;
+      line-height: 1.0;
+      color: #ffbd39; }
+  .services-1 .desc h3 {
+    line-height: 1.3;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    color: #fff; }
+    .services-1 .desc h3:after {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      content: '';
+      width: 30px;
+      height: 1px;
+      background: #ffbd39;
+      margin: 0 auto; }
+    .services-1 .desc h3 a {
+      color: #fff; }
+  .services-1 .desc h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 18px; }
+  .services-1 .desc span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #ffbd39; }
+  .services-1:hover {
+    background: #ffbd39; }
+    .services-1:hover .icon i {
+      color: #fff; }
+    .services-1:hover h3 {
+      color: #000000; }
+      .services-1:hover h3:after {
+        background: #000000; }
+
+.block-23 ul {
+  padding: 0; }
+  .block-23 ul li, .block-23 ul li > a {
+    display: table;
+    line-height: 1.5;
+    margin-bottom: 15px; }
+  .block-23 ul li span {
+    color: rgba(255, 255, 255, 0.7); }
+  .block-23 ul li .icon, .block-23 ul li .text {
+    display: table-cell;
+    vertical-align: top; }
+  .block-23 ul li .icon {
+    width: 40px;
+    font-size: 18px;
+    padding-top: 2px;
+    color: white; }
+
+
+    .contact-section .box {
+  width: 100%;
+  display: block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+  @media (max-width: 991.98px) {
+    .contact-section .box {
+      margin-bottom: 30px; } }
+  .contact-section .box .icon {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    margin-bottom: 2em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+    .contact-section .box .icon span {
+      color: #ffbd39;
+      font-size: 30px; }
+  .contact-section .box h3 {
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase; }
+
+    
+.search-form .icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.about-author {
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+border-radius: 5px; }
+.about-author .desc h3 {
+  font-size: 24px; }
+
+</style>
+
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="assets/img/logo.png" alt="Global">
+    <p>Jeleutz</p>
+  </a>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="index.html">
+            <!-- <img src="assets/img/LOGO.png" style="width: 150px;" alt="Global"> -->
+            <p style="color: #ffbd39; ">Jeleutz</p>
+          </a>
+          <button class="header--cta cta" style="background-color: #ffbd39; border-radius: 5px;">Hire Me</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>About</span></li>
+            <li><span>Milestones</span></li>
+            <!-- <li><span>Projects</span></li> -->
+            <li><span>Services</span></li>
+            <li><span>Contact me</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Your next<br>interactive<br>experience</h1>
+                <button >
+                  <a href="../cv/Leuterio Updated Resume 2024.pdf" style="text-decoration:none; color: #fff;" target="_blank" download="Leuterio-Resume" >Resume</a>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="assets/img/introduction-visual.png" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <div class="col-md-4 text-center d-flex ftco-animate">
+                  <a class="services-1" style="max-width: 80%; border-radius: 5px;">
+                    <span class="icon">
+                      <i class="flaticon-ux-design"></i>
+                    </span>
+                    <div class="desc">
+                      <h3 class="mb-5">Web Developing</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 text-center d-flex ftco-animate">
+                  <a class="services-1" style="max-width: 80%; border-radius: 5px;">
+                    <span class="icon">
+                      <i class="flaticon-web-design"></i>
+                    </span>
+                    <div class="desc">
+                      <h3 class="mb-5">Web Designing</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 text-center d-flex ftco-animate">
+                  <a class="services-1" style="max-width: 80%; border-radius: 5px;">
+                    <span class="icon">
+                      <i class="flaticon-innovation"></i>
+                    </span>
+                    <div class="desc">
+                      <h3 class="mb-5">Game Developing</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+                <h3>I am a recent graduate with a degree in <br ><b style="color: #ffbd39;">Bachelor of Science in Information Technology </b><br>and two years of hands-on experience as a <br><b style="color: #ffbd39;">Full Stack Developer. </b>
+                  
+                  <br><br>My expertise includes working with <b style="color: #ffbd39;">PHP, HTML,</b><br> <b style="color: #ffbd39;">CSS, JavaScript, and the Laravel framework</b> to build dynamic, <br>user-friendly web applications. 
+                  
+                  <br><br>During my time in the field, I have successfully <br>collaborated on projects that required both <br>front-end and back-end development, <br>showcasing my ability to deliver seamless, <br>high-performance solutions. 
+                  
+                  <br><br>I am passionate about leveraging my skills to create <br>innovative digital experiences and am excited to contribute to a forward-thinking team.
+                </h3>
+                <!-- <a href="#0">Career
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a> -->
+                <img style="width: 500px; top: -210px; right: 55px; z-index: -1;" src="assets/img/dark2.png" alt="About Us">
+                <!-- <img src="assets/img/about-visual.png" alt="About Us"> -->
+              </div>
+              <div class="about--options">
+                <a href="#0">
+                  <h3>Blog</h3>
+                </a>
+                <a href="#0">
+                  <h3>Philosophy</h3>
+                </a>
+                <a href="#0">
+                  <h3>History</h3>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="l-section section">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Milestones</h1>
+                <img src="assets/img/milestones.png" style="right: 0px;" alt="Welcome">
+                <h3>
+                  Check out my <b style="color: #ffbd39;">Milestones & Achievements </b>
+                  <br> by clicking the buttons and button below.
+                </h3>
+              </div>
+
+              <div class="intro--options" style="justify-content: space-evenly;">
+                <div class="col-md-6 text-center d-flex ftco-animate" style="width: 100%;">
+                  <a class="services-1" style="max-width: 80%; border-radius: 5px;">
+                    <span class="num" style="font-size: 40px; color: #fff;" data-val="7">100</span>
+                    <div class="desc">
+                      <h3 class="mb-5">Projects</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6 text-center d-flex ftco-animate" style="width: 100%;">
+                  <a class="services-1" style="max-width: 80%; border-radius: 5px; text-decoration:none" href="certificates.html">
+                    <span class="num" style="font-size: 40px; color: #fff;" data-val="8">100</span>
+                    <div class="desc">
+                      <h3 class="mb-5">Awards & Certifications</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <!-- <li class="l-section section">
+            <div class="work" style="bottom: 100px;">
+              <h2 style="font-size: 50px;">Projects</h2>
+              <p class="slider--item-title" style="text-align: center; margin-top: -5px;">PHP • CSS • Javascript • Laravel</p>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="https://jeleutz-dev.github.io/TaskTalk/" target="_blank">
+                      <div class="slider--item-image">
+                        <img src="../images/tasktalk.gif" style="height: 100%; width: 130%; margin-left: -15%;">
+                      </div>
+                      <p class="slider--item-title">TaskTalk</p>
+                      <p class="slider--item-description">Collaborative Tool Website</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="https://www.sanjuancity.gov.ph/SanJuanCity/" target="_blank">
+                      <div class="slider--item-image">
+                        <img  src="../images/website.gif" style="height: 100%; width: 130%; margin-left: -15%;">
+                      </div>
+                      <p class="slider--item-title">San Juan City Website</p>
+                      <p class="slider--item-description">City Information Website</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="https://sanjuancity.gov.ph/SJ_Directory/public/"  target="_blank">
+                      <div class="slider--item-image">
+                        <img src="../images/kiosk.gif" style="height: 100%; width: 130%; margin-left: -15%;">
+                      </div>
+                      <p class="slider--item-title">San Juan City Kiosk Directory</p>
+                      <p class="slider--item-description">City Hall Information Kiosk Website</p>
+                    </a>
+                  </li>
+                  <li class="slider--item">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="../images/poster1.png">
+                      </div>
+                      <p class="slider--item-title">The Adventures of Edmar</p>
+                      <p class="slider--item-description">2D Video Game Project</p>
+                    </a>
+                  </li>
+                  <li class="slider--item">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="../images/assist.jpg">
+                      </div>
+                      <p class="slider--item-title">Assist Desk</p>
+                      <p class="slider--item-description">Customer Service Website</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+           -->
+          <li class="l-section section">
+            <div class="hire">
+              <h2>You want us to do</h2>
+              <!-- checkout formspree.io for easy form setup -->
+              <form class="work-request">
+                <div class="work-request--options">
+                  <span class="options-a">
+                    <input id="opt-1" type="checkbox" value="app design">
+                    <label for="opt-1">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      App Design
+                    </label>
+                    <input id="opt-2" type="checkbox" value="graphic design">
+                    <label for="opt-2">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Graphic Design
+                    </label>
+                    <input id="opt-3" type="checkbox" value="motion design">
+                    <label for="opt-3">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Motion Design
+                    </label>
+                  </span>
+                  <span class="options-b">
+                    <input id="opt-4" type="checkbox" value="ux design">
+                    <label for="opt-4">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      UX Design
+                    </label>
+                    <input id="opt-5" type="checkbox" value="webdesign">
+                    <label for="opt-5">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Webdesign
+                    </label>
+                    <input id="opt-6" type="checkbox" value="marketing">
+                    <label for="opt-6">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Marketing
+                    </label>
+                  </span>
+                </div>
+                <div class="work-request--information">
+                  <div class="information-name">
+                    <input id="name" type="text" spellcheck="false">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="information-email">
+                    <input id="email" type="email" spellcheck="false">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <input type="submit" value="Send Request">
+              </form> 
+            </div>
+          </li>
+          
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <p><img width="15" height="15" src="https://img.icons8.com/color/48/marker--v1.png" alt="marker--v1"/> San Juan City, Philippines</p>
+                    <a href="mailto:ouremail@gmail.com">
+                      <img width="20" height="20" src="https://img.icons8.com/color/30/apple-mail.png" style="margin-bottom: -3px;" alt="apple-mail"/> Jeleutz19@gmail.com</a>
+                    <a href="tel:+148126287560">+63 945 149 0311</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li style="border-radius: 5px;">
+                      <a href="https://www.linkedin.com/in/jeleutz" target="_blank" style="height: 22px;">
+                      <img width="100" height="25" src="../assets/LinkedIn.png"  alt="linkedin"/>
+                      </a>
+                    </li>
+
+
+                    <li style="border-radius: 5px;">
+                      <a href="https://www.credly.com/users/jose-leuterio" target="_blank" style="height: 22px;">
+                      <img width="60" height="25" src="../assets/credly.png" alt="credly"/>
+                      </a>
+                    </li>
+
+                    <li style="border-radius: 5px;">
+                      <a href="mailto:ouremail@gmail.com">Contact me</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>About</li>
+    <li>Milestones</li>
+    <!-- <li>Projects</li> -->
+    <li>Services</li>
+    <li>Contact me</li>
+  </ul>
+</div>
+
+<script src="assets/js/jquery.animateNumber.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/jquery.stellar.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/scrollax.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/numberscript.js"></script>
+</body>
+</html>
