@@ -1,0 +1,69 @@
+@keyframes medalanim1 {
+    0%   { opacity:0 ; width: 150px; top: -65px; right: -60px;}
+    30%  { opacity:1 ; width: 150px; top: -65px; right: -60px;}
+    70%  { opacity:1 ; width: 50px;  top: -15px; right: -10px;}
+    100% { opacity:1 ; width: 50px;  top: -15px; right: -10px;}
+    }
+@keyframes honor1anim {
+    0%   { opacity:0 ; width: 75px; top: -65px; right: -22px;}
+    30%  { opacity:1 ; width: 75px; top: -65px; right: -22px;}
+    70%  { opacity:1 ; width: 25px;  top: -10px; right: 3px;}
+    100% { opacity:1 ; width: 25px;  top: -10px; right: 3px;}
+}
+
+.medal{
+    position: absolute;
+    width: 50px;
+    opacity: 0;
+    z-index: 10;
+    right: -10px;
+    top: -15px;
+    animation-name: medalanim1;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.medal1 {
+    animation-delay: 0.5s;
+}
+
+.medal2 {
+    animation-delay: 1s;
+}
+
+.medal3 {
+    animation-delay: 1.5s;
+}
+
+
+.honor {
+    position: absolute; 
+    width: 25px; 
+    opacity: 0;
+    z-index: 10; 
+    top: -10px; 
+    right: 3px;
+    animation-name: honor1anim;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.honor1 {
+    animation-delay: 2s;
+}
+
+.honor2 {
+    animation-delay: 2.5s;
+}
+
+.honor3 {
+    animation-delay: 3s;
+}
+
+.honor4 {
+    animation-delay: 3.5s;
+}
+
+.honor5 {
+    animation-delay: 4s;
+}

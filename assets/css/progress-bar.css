@@ -1,0 +1,153 @@
+@property --progress-value {
+  syntax: "<integer>";
+  inherits: false;
+  initial-value: 0;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* to center the percentage value */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar::before {
+  counter-reset: percentage var(--progress-value);
+  content: counter(percentage) "%";
+}
+
+.php {
+  background: radial-gradient(closest-side, #0c0c0c 75%, transparent 80% 100%), 
+  conic-gradient(#ffbd39 calc(var(--progress-value) * 1%), #f8dca5 0);
+  -webkit-animation: php-progress 2s linear 3s 1 forwards;
+          animation: php-progress 2s linear 3s 1 forwards;
+}
+
+.php::before {
+  -webkit-animation: php-progress 2s linear 3s 1 forwards;
+          animation: php-progress 2s linear 3s 1 forwards;
+}
+
+
+@-webkit-keyframes php-progress {
+  to {
+    --progress-value: 90;
+  }
+}
+@keyframes php-progress {
+  to {
+    --progress-value: 90;
+  }
+}
+
+.html {
+  background: radial-gradient(closest-side, #0c0c0c 75%, transparent 80% 100%), 
+  conic-gradient(#ffbd39 calc(var(--progress-value) * 1%), #f8dca5 0);
+  -webkit-animation: html-progress 2s linear 3s 1 forwards;
+          animation: html-progress 2s linear 3s 1 forwards; 
+          animation-delay: html-progress 5s; 
+}
+
+.html::before {
+  -webkit-animation: html-progress 2s linear 3s 1 forwards;
+          animation: html-progress 2s linear 3s 1 forwards;
+          animation-delay: html-progress 5s; 
+}
+
+@-webkit-keyframes html-progress {
+  to {
+    --progress-value: 95;
+  }
+}
+@keyframes html-progress {
+  to {
+    --progress-value: 95;
+  }
+}
+
+.css {
+  background: radial-gradient(closest-side, #0c0c0c 75%, transparent 80% 100%), 
+  conic-gradient(#ffbd39 calc(var(--progress-value) * 1%), #f8dca5 0);
+  -webkit-animation: css-progress 2s linear 3s 1 forwards;
+          animation: css-progress 2s linear 3s 1 forwards;
+}
+
+.css::before {
+  -webkit-animation: css-progress 2s linear 3s 1 forwards;
+          animation: css-progress 2s linear 3s 1 forwards;
+}
+
+@-webkit-keyframes css-progress {
+  to {
+    --progress-value: 90;
+  }
+}
+@keyframes css-progress {
+  to {
+    --progress-value:90;
+  }
+}
+
+.js {
+  background: radial-gradient(closest-side, #0c0c0c 75%, transparent 80% 100%), 
+  conic-gradient(#ffbd39 calc(var(--progress-value) * 1%), #f8dca5 0);
+  -webkit-animation: js-progress 2s linear 3s 1 forwards;
+          animation: js-progress 2s linear 3s 1 forwards;
+}
+
+.js::before {
+  -webkit-animation: js-progress 2s linear 3s 1 forwards;
+          animation: js-progress 2s linear 3s 1 forwards;
+}
+
+@-webkit-keyframes js-progress {
+  to {
+    --progress-value: 85;
+  }
+}
+@keyframes js-progress {
+  to {
+    --progress-value: 85;
+  }
+}
+
+.badge-medal {
+    position: absolute; 
+    width: 50px; 
+    opacity:0 ;
+    z-index: 10; 
+    top: 100px;
+    animation-name: badgeanim;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes badgeanim {
+0%   { opacity:0 ; width: 150px; top: 405px; left: 655px;}
+30%  { opacity:1 ; width: 150px; top: 405px; left: 655px;}
+70%  { opacity:1 ; width: 50px;  top: 455px; left: 720px;}
+100% { opacity:1 ; width: 50px;  top: 455px; left: 720px;}
+}
+
+progress {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.p-bar {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    width: 800px;    
+    text-align: center;
+}
+  .p-bar-container {
+    z-index: 5; 
+    display: flex; 
+    justify-content: center;
+  }
